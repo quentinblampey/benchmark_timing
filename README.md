@@ -1,6 +1,6 @@
-# Timing two public algorithms
+# Timing three public algorithms
 
-This repository contains code from ACDC and Phenograph, two public algorithms. The purpose is to time these algorithms on different dataset sizes.
+This repository contains code from ACDC, MP, and Phenograph, three public algorithms. The purpose is to time these algorithms on different dataset sizes.
 
 ## Getting started
 
@@ -28,4 +28,10 @@ Run ACDC2 (expected: about one day)
 
 ```
 python timing_acdc2.py
+```
+
+Run MP (expected: about one day)
+
+```
+python timing_mp.py
 ```
