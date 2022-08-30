@@ -4,7 +4,7 @@ This repository contains code from ACDC, MP, and Phenograph, three public algori
 
 ## Getting started
 
-Create a fresh Python 3.9 environment and install the dependencies:
+Create a fresh Python 3.7 environment and install the dependencies:
 
 ```
 pip install -r requirements.txt
