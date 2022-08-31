@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     times, n_samples = [], []
 
-    for n in [len(model.y0)] + [200000, 400000]:
+    for n in [len(model.y0)] + [200000, 400000, 800000, 1600000]:
         if n > len(model.y0):
             sampling_strategy = dict(Counter(np.random.choice(model.y0, n)))
             sm = SMOTE(sampling_strategy=sampling_strategy, random_state=42)
@@ -20,7 +20,7 @@ if __name__ == "__main__":
         n_samples.append(n)
 
         start = time.perf_counter()
-        model()
+        model(run_pheno=False)
         times.append(time.perf_counter() - start)
 
         print("n:", n_samples)

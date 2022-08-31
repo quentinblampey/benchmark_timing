@@ -4,34 +4,15 @@ This repository contains code from ACDC, MP, and Phenograph, three public algori
 
 ## Getting started
 
-Create a fresh Python 3.7 environment and install the dependencies:
+Create two fresh Python 3.7 environments and install dependencies:
 
-```
-pip install -r requirements.txt
-```
+- On the first env, run `pip install -r requirements.txt`
+- On the second env, run `pip install -r requirements_mp.txt`
 
-## Run the scripts (on CPUs)
+## Run the jobs (on CPUs)
 
-Run Phenograph (expected: about one day)
+Three jobs have to be run: `acdc.sh`, `mp.sh`, and `pheno.sh`.
 
-```
-python timing_pheno.py
-```
+> Note that, you have to activate the first env, except for `mp.sh` (second env).
 
-Run ACDC (expected: about one day)
-
-```
-python timing_acdc.py
-```
-
-Run ACDC2 (expected: about one day)
-
-```
-python timing_acdc2.py
-```
-
-Run MP (expected: about one day)
-
-```
-python timing_mp.py
-```
+All we need are the logs, which tells how long the algorithms run on the different dataset sizes.

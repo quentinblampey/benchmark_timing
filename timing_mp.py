@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     times, n_samples = [], []
 
-    for n in [len(model.Y)] + [200000, 400000, 800000, 1600000]:
+    for n in [len(model.Y)] + [200000, 400000]:
         if n > len(model.Y):
             sampling_strategy = dict(Counter(np.random.choice(model.Y, n)))
             sm = SMOTE(sampling_strategy=sampling_strategy, random_state=42)
